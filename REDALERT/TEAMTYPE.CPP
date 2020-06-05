@@ -941,7 +941,7 @@ bool TeamTypeClass::Edit(void)
 		TPF_EFNT | TPF_NOSHADOW,
 		MFCD::Retrieve("EBTN-UP.SHP"),
 		MFCD::Retrieve("EBTN-DN.SHP"));
-	for (index = 0; index < MissionCount; index++) {
+	for (int index = 0; index < MissionCount; index++) {
 		missionlist2.Add_Item(new TeamMissionClass(MissionList[index]));
 //		missionlist2.Add_Item(&TeamMissions[MissionList[index].Mission]);
 	}
@@ -1330,7 +1330,7 @@ bool TeamTypeClass::Edit(void)
 				}
 
 				MissionCount = missionlist2.Count();
-				for (index = 0; index < MissionCount; index++) {
+				for (int index = 0; index < MissionCount; index++) {
 					MissionList[index].Data.Value = 0;				// Clears extra bits.
 					MissionList[index] = *missionlist2[index];
 				}
