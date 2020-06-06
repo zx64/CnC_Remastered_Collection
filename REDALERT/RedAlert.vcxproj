@@ -44,14 +44,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\Mods\Red_Alert\test\Data\</OutDir>
-    <IntDir>$(PlatformName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Mods\Red_Alert\test\Data\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\Mods\Red_Alert\test\Data\</OutDir>
-    <IntDir>$(PlatformName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)Mods\Red_Alert\test\Data\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)I</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
