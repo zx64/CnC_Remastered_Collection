@@ -589,7 +589,7 @@ void CCDebugString (char *string)
 
 #else
 
-	string = string;
+	OutputDebugStringA(string);
 
 #endif
 
